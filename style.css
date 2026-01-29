@@ -1,0 +1,73 @@
+:root{
+  --Principal:#000;
+  --Secundaria:#fff;
+  --Terceira:#4DC6F0;
+  --Quarta:#75AAF0;
+  --Quinta:#54F0E6;
+}
+
+body{
+  background-color: var(--Secundaria);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header{
+  background: linear-gradient(90deg, var(--Terceira), var(--Quarta));
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  border-bottom: 2px solid var(--Principal);
+}
+
+nav h2:hover{
+  cursor: pointer;
+  color: var(--Terceira);
+}
+
+main{
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+
+  display: grid;
+  gap: 2rem;
+}
+
+.posts article{
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  max-width: 500px;
+  border: 3px solid var(--Principal);
+  border-radius: 20px;
+  transition: transform 0.2s ease;
+}
+
+img:hover{
+  transform: scale(1.05);
+}
+
+#verMais{
+  padding: 1rem;
+  background-color: var(--Terceira);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+  nav{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
